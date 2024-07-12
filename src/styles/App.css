@@ -1,0 +1,59 @@
+/* src/styles/App.css */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 25%;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.left-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-sidebar {
+  width: 25%;
+  padding: 20px;
+  border-left: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.chat-container {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+}
+
+.polished-goal {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+}

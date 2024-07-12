@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Sprint - Step 4: Prototype</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="section">
+        <div class="container">
+            <h1 class="large-heading">Step 4: Prototype</h1>
+            <p class="text-lead">Describe your prototype and upload any relevant files.</p>
+            <form method="POST" action="{{ url_for('quick_sprint_step', step=5) }}" enctype="multipart/form-data">
+                <textarea name="prototype_description" rows="4" placeholder="Enter your prototype description here..."></textarea>
+                <input type="file" name="prototype" accept="image/*">
+                <button type="submit" class="button bg-brand">Next Step</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

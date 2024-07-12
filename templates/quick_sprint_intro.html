@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Sprint Introduction</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="section">
+        <div class="container">
+            <h1 class="large-heading">Quick Sprint</h1>
+            <p class="text-lead">Welcome to the Quick Sprint. This process will guide you through a condensed version of the Design Sprint, helping you tackle big challenges in just 30 minutes.</p>
+            <a href="{{ url_for('quick_sprint_step', step=1) }}" class="button bg-brand">Start Sprint</a>
+        </div>
+    </div>
+</body>
+</html>

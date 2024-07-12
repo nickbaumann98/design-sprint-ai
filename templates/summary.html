@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint Summary</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="section">
+        <div class="container">
+            <h1 class="large-heading">Sprint Summary</h1>
+            <p class="text-lead">Here's a summary of your Quick Sprint process:</p>
+
+            <div class="callout-blue-outline">
+                <h2 class="medium-heading">Understand</h2>
+                <p>{{ summary.long_term_goal }}</p>
+            </div>
+            <div class="callout-blue-outline">
+                <h2 class="medium-heading">Sketch</h2>
+                {% if summary.sketch %}
+                <img src="{{ url_for('static', filename=summary.sketch) }}" alt="Sketch">
+                {% endif %}
+                <p>{{ summary.sketch_text }}</p>
+            </div>
+            <div class="callout-blue-outline">
+                <h2 class="medium-heading">Decide</h2>
+                <p>{{ summary.decision_process }}</p>
+            </div>
+            <div class="callout-blue-outline">
+                <h2 class="medium-heading">Prototype</h2>
+                <p>{{ summary.prototype_description }}</p>
+                {% if summary.prototype %}
+                <img src="{{ url_for('static', filename=summary.prototype) }}" alt="Prototype">
+                {% endif %}
+            </div>
+            <div class="callout-blue-outline">
+                <h2 class="medium-heading">Test</h2>
+                <p>{{ summary.test_findings }}</p>
+            </div>
+
+            <div class="navigation">
+                <a href="{{ url_for('index') }}" class="button bg-brand">Start a New Sprint</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

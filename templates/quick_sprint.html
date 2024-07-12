@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Sprint</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="section">
+        <div class="container">
+            <h1 class="large-heading">Quick Sprint</h1>
+            <form method="POST" enctype="multipart/form-data">
+                <div class="form-section">
+                    <h3 class="small-heading">Step 1: Understand</h3>
+                    <p>Where do you want to be in six months, a year, or even five years from now?</p>
+                    <textarea name="long_term_goal" rows="4" placeholder="Enter your long-term goal here..."></textarea>
+                </div>
+                <div class="form-section">
+                    <h3 class="small-heading">Step 2: Sketch</h3>
+                    <p>Draw or upload your sketches:</p>
+                    <input type="file" name="sketch" accept="image/*">
+                    <textarea name="sketch_text" rows="4" placeholder="Describe your sketch here..."></textarea>
+                </div>
+                <div class="form-section">
+                    <h3 class="small-heading">Step 3: Decide</h3>
+                    <p>Describe your decision-making process:</p>
+                    <textarea name="decision_process" rows="4" placeholder="Enter your decision-making process here..."></textarea>
+                </div>
+                <div class="form-section">
+                    <h3 class="small-heading">Step 4: Prototype</h3>
+                    <p>Describe your prototype:</p>
+                    <textarea name="prototype_description" rows="4" placeholder="Enter your prototype description here..."></textarea>
+                    <p>Upload your prototype (optional):</p>
+                    <input type="file" name="prototype" accept="image/*">
+                </div>
+                <div class="form-section">
+                    <h3 class="small-heading">Step 5: Test</h3>
+                    <p>Summarize your test findings:</p>
+                    <textarea name="test_findings" rows="4" placeholder="Enter your test findings here..."></textarea>
+                </div>
+                <button type="submit" class="button bg-brand">Submit and Get AI Feedback</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

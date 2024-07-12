@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Sprint</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="section">
+        <div class="container">
+            <img src="{{ url_for('static', filename='charactervc_logo.jpeg') }}" alt="Home" class="footer-monogram">
+            <h1 class="large-heading">Welcome to Quick Sprint</h1>
+            <p class="text-lead">A quick and efficient way to experience the Design Sprint process.</p>
+            <a href="{{ url_for('quick_sprint_intro') }}" class="button bg-brand">Start Quick Sprint</a>
+        </div>
+    </div>
+</body>
+</html>

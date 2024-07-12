@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Sprint - Step 3: Decide</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="section">
+        <div class="container">
+            <h1 class="large-heading">Step 3: Decide</h1>
+            <p class="text-lead">Describe your decision-making process.</p>
+            <form method="POST" action="{{ url_for('quick_sprint_step', step=4) }}">
+                <textarea name="decision_process" rows="4" placeholder="Enter your decision-making process here..."></textarea>
+                <button type="submit" class="button bg-brand">Next Step</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

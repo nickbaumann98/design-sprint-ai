@@ -1,0 +1,46 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  width: 100%;
+}
+
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 300px; /* Ensure space for sidebar */
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #f3f4f6;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.sticky-notes {
+  margin-top: 20px;
+}
+
+.sticky-note {
+  background-color: #fffae6;
+  border: 1px solid #ffd700;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
